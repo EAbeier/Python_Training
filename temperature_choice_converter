@@ -1,0 +1,19 @@
+print ('Digite a temperatura em celsius (°C)')
+tc = float(input())
+print("Selcione a temperatura que deseja converter")
+print("[1] kelvin")
+print("[2] fahrenheit")
+te = int(input())
+
+if te ==1 :
+    Tcon = tc + 273.15
+    T_def = "Kelvin"
+    UnM = "K"
+elif te == 2:
+    Tcon = 1.8*tc+32
+    T_def = "Fahrenheit"
+    UnM = "°F"
+else:
+    print('Escolha incorreta')
+
+print("A temperatura em °C ",tc," em ",T_def, "ficará: ",Tcon, UnM)
