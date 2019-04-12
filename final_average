@@ -1,0 +1,25 @@
+print('NOTAS ALUNO')
+print('Digite o código do Aluno: ')
+Code_Alu = input()
+print('Entre com a primeira nota')
+N1 = float(input())
+print('entre com a segunda nota:')
+N2 = float(input())
+print('entre com a terceira nota:')
+N3 = float(input())
+if (N1>N2)and(N1>N3):
+    Media = ((N1 * 4)+(N2 * 3)+(N3 * 3))/(4 + 3 + 3)
+elif (N2>N1)and(N2>N3):
+    Media = ((N2 * 4) + (N1 * 3) + (N3 * 3)) / (4 + 3 + 3)
+else :
+    Media = ((N3 * 4) + (N1 * 3) + (N2 * 3)) / (4 + 3 + 3)
+if Media>=5:
+    Result = 'APROVADO'
+else:
+    Result = 'REPROVADO'
+print('Código do aluno',Code_Alu)
+print('Nota 1: ',N1)
+print('Nota 2: ',N2)
+print('Nota 3: ',N3)
+print('media:',Media)
+print('O alnuno código: ',Code_Alu, ' está ', Result)
